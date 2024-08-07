@@ -1,0 +1,160 @@
+/* Choice Section */
+#choice {
+    padding: 20px 20px;
+    background-color: #fff;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+    background-size: 50px 50px; /* Adjust size as needed */
+    text-align: center;
+}
+
+#choice .head {
+    margin-bottom: 30px;
+}
+
+#choice .head .about {
+    font-size: 25px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#choice .head .title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+#choice .title .com {
+    color: #0EE20E;
+}
+
+#choice .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#choice .block {
+    background-color: #0EE20E;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 365px;
+    height: 421px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#choice .block p.head {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#choice .block p {
+    display: flex;
+    color: #202020;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px;
+}
+
+#choice .gif {
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+}
+
+#choice .gif img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #choice .head .about {
+        font-size: 22px;
+    }
+
+    #choice .head .title {
+        font-size: 50px;
+    }
+
+    #choice .block {
+        width: 300px;
+        height: auto;
+    }
+
+    #choice .block p {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    #choice .gif {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #choice .main {
+        flex-direction: column;
+    }
+
+    #choice .head .about {
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+
+    #choice .head .title {
+        font-size: 40px;
+    }
+
+    #choice .block,
+    #choice .gif {
+        margin: 20px 0;
+    }
+
+    #choice .block {
+        width: 80%;
+        height: auto;
+    }
+
+    #choice .block p {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    #choice .gif {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #choice {
+        height: auto;
+        padding: 20px;
+    }
+
+    #choice .head .about {
+        font-size: 18px;
+    }
+
+    #choice .head .title {
+        font-size: 30px;
+    }
+
+    #choice .block {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #choice .block p {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    #choice .gif {
+        width: 150px;
+        height: 150px;
+    }
+}

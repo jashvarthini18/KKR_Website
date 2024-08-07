@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Main CSS file for global styles
+import Header from './components/Header';
 
-function App() {
+import ChoiceSection from './components/ChoiceSection';
+import AboutSection from './components/AboutSection';
+import ServicesSection from './components/ServicesSection';
+import Footer from './components/Footer';
+import CommunitySection from './components/CommunitySection';
+import WorkshopSection from './components/WorkshopSection';
+import Testimonials from './components/Testimonials';
+import InternshipSection from './components/InternshipSection';
+import Potential from './components/Potential';
+import StatisticsSection from './components/StatisticsSection';
+import ImageCarousel from './components/ImageMarquee';
+import Hero from './components/Hero';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      {/* <HeroSection /> */}
+      <Hero />
+      <StatisticsSection />
+      <ChoiceSection />
+      <AboutSection />
+      <ServicesSection />
+      <CommunitySection />
+      <WorkshopSection />
+      <Testimonials />
+      <InternshipSection />
+      <Potential />
+      <ImageCarousel />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

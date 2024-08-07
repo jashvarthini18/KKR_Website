@@ -1,0 +1,151 @@
+/* Workshop Section */
+.workshop-section {
+  background-color: #202020;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.workshop-title {
+  font-size: 3em; /* Adjusted for better responsiveness */
+  font-weight: bold;
+  margin-bottom: 40px; /* Add some space below the title */
+  text-align: center;
+}
+
+.workshop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshop-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: end;
+}
+
+.workshop-content h3 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #32CD32;
+}
+
+.workshop-content p {
+  font-size: 25px;
+  color: #ffffff;
+  max-width: 650px;
+  margin: 0 auto 20px auto;
+}
+
+.book-btn {
+  display: inline-block;
+  background-color: #32CD32;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.book-btn:hover {
+  background-color: #28a745;
+}
+
+.workshop-image {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workshop-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .workshop-title {
+    font-size: 2.5em;
+  }
+
+  .workshop-content h3 {
+    font-size: 2em;
+  }
+
+  .workshop-content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .workshop-section {
+    padding: 40px 10px;
+  }
+
+  .workshop-title {
+    font-size: 2em;
+  }
+
+  .workshop-content h3 {
+    font-size: 1.5em;
+  }
+
+  .workshop-content p {
+    font-size: 0.9em;
+  }
+
+  .workshop-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .workshop-section {
+    padding: 20px 5px;
+  }
+
+  .workshop-title {
+    font-size: 1.5em;
+  }
+
+  .workshop-content h3 {
+    font-size: 1.2em;
+  }
+
+  .workshop-content p {
+    font-size: 0.8em;
+  }
+
+  .book-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .workshop-container {
+    flex-direction: column; /* Stack image above content */
+  }
+
+  .workshop-image {
+    max-width: 100%;
+    height: auto;
+    order: -1; /* Ensure the image appears above the content */
+  }
+}

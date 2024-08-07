@@ -1,0 +1,210 @@
+/* About Us Page */
+#aboutPage {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#aboutPage .title {
+  text-align: center;
+  margin: 15px;
+  font-size: 3em;
+  font-weight: 650;
+}
+
+#aboutPage .title p {
+  color: #fff;
+}
+
+#aboutPage .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#aboutPage .image {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 90%;
+  width: 100%;
+  height: auto;
+}
+
+#aboutPage .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#aboutPage .text {
+  margin-left: 20px;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+#aboutPage .head p {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#aboutPage .head p span.col {
+  color: #0EE20E;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#aboutPage .head .first {
+  color: white;
+  font-size: 2.5em;
+}
+
+#aboutPage .para p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+#aboutPage .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+#aboutPage .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+#aboutPage .line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+#aboutPage .line:nth-child(1) {
+  margin-left: -25%;
+}
+
+#aboutPage .line:nth-child(1)::after {
+  animation-delay: 2s;
+}
+
+#aboutPage .line:nth-child(3) {
+  margin-left: 25%;
+}
+
+#aboutPage .line:nth-child(3)::after {
+  animation-delay: 2.5s;
+}
+
+@keyframes drop {
+  0% {
+      top: -50%;
+  }
+  100% {
+      top: 110%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #aboutPage .content {
+      grid-template-columns: 1fr;
+      padding: 0;
+  }
+  
+  #aboutPage .image {
+    width: 100%;
+    height: auto;
+  }
+
+  #aboutPage .text {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #aboutPage .head p {
+      font-size: 35px;
+  }
+
+  #aboutPage .para p {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #aboutPage .content {
+      grid-template-columns: 1fr;
+      padding: 0;
+  }
+
+  #aboutPage .image {
+    width: 100%;
+    height: auto;
+  }
+
+  #aboutPage .text {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #aboutPage .head p {
+      font-size: 25px;
+  }
+
+  #aboutPage .para p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #aboutPage {
+      height: auto;
+      padding: 20px;
+  }
+  
+  #aboutPage .image {
+      width: 100%;
+      height: auto;
+  }
+
+  #aboutPage .head p {
+      font-size: 20px;
+  }
+
+  #aboutPage .para p {
+      font-size: 13px;
+  }
+}

@@ -1,0 +1,133 @@
+/* Internship Section */
+.internship-section {
+  background-color: #202020;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.internship-title {
+  font-size: 3em; /* Adjusted for better responsiveness */
+  margin-bottom: 40px; /* Add some space below the title */
+  text-align: center;
+}
+
+.internship-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+}
+
+.internship-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: start; /* Center text on smaller screens */
+}
+
+.internship-content h3 {
+  font-size: 2.5rem; /* Adjusted for better responsiveness */
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #32CD32; /* Green color for highlights */
+}
+
+.internship-content p {
+  font-size: 1.5rem; /* Adjusted for better responsiveness */
+  color: #ffffff;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.join-btn {
+  display: inline-block;
+  background-color: #32CD32;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: #28a745;
+}
+
+.internship-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.internship-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .internship-title {
+      font-size: 2.5rem;
+  }
+
+  .internship-content h3 {
+      font-size: 2rem;
+  }
+
+  .internship-content p {
+      font-size: 1.25rem;
+  }
+
+  .internship-image {
+      max-width: 500px; /* Adjust image size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-title {
+      font-size: 2rem;
+  }
+
+  .internship-content h3 {
+      font-size: 1.75rem;
+  }
+
+  .internship-content p {
+      font-size: 1rem;
+  }
+
+  .internship-image {
+      max-width: 400px; /* Adjust image size for smaller tablets and large phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .internship-title {
+      font-size: 1.5rem;
+  }
+
+  .internship-content h3 {
+      font-size: 1.25rem;
+  }
+
+  .internship-content p {
+      font-size: 0.875rem;
+  }
+
+  .internship-image {
+      max-width: 300px; /* Adjust image size for mobile devices */
+  }
+}

@@ -1,0 +1,31 @@
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .marquee {
+    display: flex;
+    width: calc(250px * 10); /* Assuming each image is 250px wide and there are 10 images (2 sets of 5 images) */
+    animation: marquee 15s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 auto;
+    width: 250px; /* Width of each image */
+  }
+  
+  .marquee-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

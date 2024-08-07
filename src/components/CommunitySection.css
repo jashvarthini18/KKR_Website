@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+.bg-url {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+  background-size: 50px 50px;
+}
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling {
+  0% { background-position: 50px 50px; }
+}
+
+/* Community Section */
+.community-section {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+  animation: bg-scrolling-reverse .92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.community-title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: #202020;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.community-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.community-content {
+  flex: 1;
+  margin: 6%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.community-content h3 {
+  font-size: 2.5em;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.community-content p {
+  font-size: 25px;
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #32CD32; /* Green color for ROS */
+}
+
+.join-btn {
+  display: inline-block;
+  background-color: #32CD32; /* Green background for the button */
+  color: #ffffff; /* White text for the button */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: #28a745;
+}
+
+.community-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.community-image img {
+  max-width: 100%;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .community-title {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+
+  .community-content h3 {
+    font-size: 1.75em;
+  }
+
+  .community-content p {
+    font-size: 1.125em;
+  }
+
+  .community-image img {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .community-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community-content,
+  .community-image {
+    max-width: 100%;
+  }
+
+  .community-content h3 {
+    font-size: 1.5em;
+  }
+
+  .community-content p {
+    font-size: 1em;
+  }
+
+  .community-image img {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+
+  .community-content h3 {
+    font-size: 1.25em;
+  }
+
+  .community-content p {
+    font-size: 0.875em;
+  }
+
+  .community-image img {
+    width: 260px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,169 @@
+/* Main styles for the Services section */
+#servicesPage {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+    animation: bg-scrolling-reverse .92s infinite; /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    padding: 20px 8%;
+    background-color: #f9f9f9;
+  }
+  
+  .services {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 20px; /* Add padding to the left of the text */
+  }
+  
+  .container-service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual service card */
+  .card-service {
+    background-color: #202020; /* Dark background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Light shadow for depth */
+    padding: 20px;
+    width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 24px solid #ffffff; /* Light grey border */
+  }
+  
+  .card-service:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content-service {
+    padding: 20px;
+  }
+  
+  .content-service h2 {
+    font-size: 3em; /* Large number */
+    color: #e0e0e0; /* Light grey color for the number */
+    margin-bottom: 10px;
+  }
+  
+  .content-service h3 {
+    font-size: 1.5em;
+    color: #ffffff; /* White color for the title */
+    margin-bottom: 15px;
+  }
+  
+  .content-service p {
+    font-size: 20px;
+    color: #ffffff; /* White color for the description */
+    margin-bottom: 20px;
+  }
+  
+  .content-service a {
+    background-color: #32CD32; /* Green background for the button */
+    color: #ffffff; /* White text for the button */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .content-service a:hover {
+    background-color: #28a745; /* Darker green on hover */
+  }
+  
+  /* AOS animation specific styles */
+  [data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  [data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  [data-aos="fade-right"].aos-animate,
+  [data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .services {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+  
+    .card-service {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .content-service h2 {
+      font-size: 2.5em;
+    }
+  
+    .content-service h3 {
+      font-size: 1.3em;
+    }
+  
+    .content-service p {
+      font-size: 0.9em;
+    }
+  
+    .content-service a {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+  
+    .card-service {
+      width: 300px;
+      padding: 10px;
+    }
+  
+    .content-service h2 {
+      font-size: 2em;
+    }
+  
+    .content-service h3 {
+      font-size: 1.1em;
+    }
+  
+    .content-service p {
+      font-size: 16px;
+    }
+  
+    .content-service a {
+      padding: 6px 12px;
+    }
+  }
+  
